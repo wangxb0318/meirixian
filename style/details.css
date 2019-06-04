@@ -1,0 +1,90 @@
+@charset "utf-8";
+
+
+
+.top{width:100%;height:40px;background: #fafafa;overflow: hidden;}
+.top .top-left{float: left;margin-left:100px;margin-top:10px;}
+.top .top-left span{font-size:12px;background:url(../images/logo1.png) no-repeat left;padding-left:25px;}
+.top .top-left a{font-size: 12px;margin-left:15px;}
+.top .top-left a:hover{color:#f00;}
+.top .top-right{float:right;margin-right:100px;margin-top:10px;}
+.top .top-right .login{font-size: 12px;color: #a5a5aa;text-decoration: none;}
+.top .top-right .login:hover{color:#f00;}
+.top .top-right span{margin:0 10px;}
+.top .top-right .register{font-size: 12px;color: #a5a5aa;text-decoration: none;}
+.top .top-right .register:hover{color:#f00;}
+
+.header{width:100%;height:150px;}
+.header .imgbox img{float:left;width:200px;height:150px;margin:10px 0 0 100px;}
+.search .sea{float:left;width:400px;height:30px;margin-top:60px;margin-left:250px;outline: none;border:2px solid #f00;}
+.search .icon{float:left;width:34px;height:34px;margin-top:60px;border: 2px solid #f00;background: none;border-left:none;background:url(../images/sou.png) no-repeat center;cursor: pointer;outline: none;}
+.shop{float:right;width:130px;height:36px;background:#0c82d9;text-align: center;margin-top:60px;margin-right:100px;}
+.shop .shop-cat{font-size:14px;color:#fff;text-decoration: none;line-height: 36px;}
+
+.nav{height:35px;border-bottom:2px solid #151515;z-index: 996;position: relative;}
+.nav .wrap{position: relative;width:1190px;margin:0 auto;}
+.nav .nav-left{float: left;width:190px;height:35px;position: relative;margin-left:-153px;}
+.nav .nav-left .all{background:#151515;height:35px;width:190px;text-align: center;line-height: 35px;}
+.nav .nav-left .all a{color:#fff;}
+.nav .nav-left .goods{display:none;}
+.nav .nav-left:hover .goods{display:block;}
+.nav .nav-left .goods .goods-ul{position: absolute;width:190px;height:300px;background:#151515;opacity: .75;}
+.nav .nav-left .goods .goods-ul li{padding-top:15px;padding-left:40px;}
+.nav .nav-left .goods .goods-ul li a{color:#fff;}
+.nav .nav-left .goods .goods-ul li .sou{display:none;position: absolute;height:200px;}
+.nav .nav-left .goods .goods-ul li:hover .sou{display:block;z-index: 999;margin-top:20px;}
+.nav .nav-left .goods .goods-ul li .sou p{display:block;position: relative;left:150px;bottom:55px;background:#fff;width:500px;height:50px;padding-left:30px;}
+.nav .nav-left .goods .goods-ul li .sou p a{color:#000;}
+
+.nav .nav-right{float: left;margin-left:20px;}
+.nav .nav-right ul li{float: left;margin-right:60px;height:35px;width:80px;text-align: center;line-height:35px;}
+.nav .nav-right ul li a{font-size:15px;color:#000;}
+.nav .nav-right ul li:hover{background:#f00;display: block;}
+
+.wrap{width:1190px;margin:0 auto;}
+.wrap .seller{width:100%;border-bottom:1px solid #eee;margin-bottom:30px;padding:10px 0 20px;}
+.wrap .seller a{color:#333;font-size:12px;}
+.wrap .seller i{color:#999;}
+.wrap .intro{overflow: hidden;}
+.wrap .intro .intro-left{float:left;}
+.wrap .intro .intro-left img{width:450px;height:450px;border:1px solid #333}
+.wrap .intro .intro-left .imgbox ul{overflow: hidden;margin-top:10px;}
+.wrap .intro .intro-left .imgbox ul li{float: left;}
+.wrap .intro .intro-left .imgbox ul li img{width:78px;height:78px;margin:0 5px;border:1px solid #ec595c;}
+.wrap .intro .intro-right{float:right;width:710px;}
+.wrap .intro .intro-right .name{font-size:20px;color:#333;line-height: 34px;margin-top:-8px;}
+.wrap .intro .intro-right .price{width:710px;height:68px;background:#f9f9f9;color:#333;border:1px solid #ddd;margin-top:20px;}
+.wrap .intro .intro-right .price .black{color:#333;width:52px;float: left;margin-right:23px;line-height:70px;padding-left:10px;}
+.wrap .intro .intro-right .price .pr{color:#ec595c;font-size:30px;float: left;line-height:70px;}
+.wrap .intro .intro-right .procedure{height:150px;float: left;width:710px;}
+.wrap .intro .intro-right .procedure .promotion{margin-top:10px;}
+.wrap .intro .intro-right .procedure .promotion .cu{font-size:12px;padding-left:10px;}
+.wrap .intro .intro-right .procedure .promotion .man{font-size:12px;color:#ec595c;padding:0 10px 0 50px;}
+.wrap .intro .intro-right .procedure .promotion .yi{font-size:12px;}
+.wrap .intro .intro-right .procedure .service{margin-top:30px;}
+.wrap .intro .intro-right .procedure .service .fuwu{font-size:12px;padding-left:10px;}
+.wrap .intro .intro-right .procedure .service .you{font-size:12px;padding-left:50px;}
+.wrap .intro .intro-right .buy{float:left;width:710px;}
+.wrap .intro .intro-right .buy .gou{float:left;width:62px;padding-left:10px;line-height: 22px;height:22px;font-size:12px;color:#333}
+.wrap .intro .intro-right .buy ul{float: left;width: 88px;height: 30px;border: 1px solid #535353;margin-left:30px;}
+.wrap .intro .intro-right .buy ul li{float: left;width: 29px;height: 30px;}
+.wrap .intro .intro-right .buy ul li a{width: 29px;height: 30px;cursor: pointer;text-align: center;font-weight: bold;font-size: 14px;color: #8c8b8b;background: #f9f9f9;line-height: 30px;display: inline-block;}
+.wrap .intro .intro-right .buy ul li span{line-height: 30px;text-align: center;}
+.wrap .intro .intro-right .buy .mei{font-size:12px;color:#333;padding-left:30px;line-height: 22px;height:22px;width:82px;display: inline-block;}
+.wrap .intro .intro-right .choice{float: left;margin-top:40px;padding-left:90px;}
+.wrap .intro .intro-right .choice a.liji{display: block;width:160px;height:50px;line-height: 50px;border:1px solid #ec595c;color:#ec595c;background:#fff8f9;text-align: center;float: left;}
+.wrap .intro .intro-right .choice .jiaru{display: block;width:160px;height:50px;line-height: 50px;border:1px solid #ec595c;color:#fff;background:#ec595c;text-align: center;float:left;margin-left:10px;}
+
+.footer{margin-top:50px;min-width:1190px;}
+.footer .footer-t{background:#f3f3f3;padding: 20px 0;height: 150px;padding-left:150px;}
+.footer .footer-t .test{float: left;margin:0 80px;}
+.footer .footer-t .test p{margin:10px 0;}
+.footer .footer-t .test ul li{font-size:12px;margin:5px 0;}
+.footer .footer-t .test ul li a{color:#000;}
+.footer .footer-t .test ul li a:hover{color:#e6133c;}
+.footer-b{padding:20px 0;text-align: center;}
+.footer-b a{font:14px/2 "";color:#000;}
+.footer-b a:hover{color:#e6133c; }
+.footer-b span{margin:0 5px;}
+.footer-b .copy{margin-top:20px;padding-bottom: 10px;}
+
