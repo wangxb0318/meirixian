@@ -53,7 +53,9 @@
 .list{width:1200px;margin-left:110px;margin-top:30px;}
 .list li{text-align:center;width:210px;height:300px; border:1px solid #000;margin-bottom:20px;}
 .list li p{height:30px;line-height: 30px;color:#e6133c}
-.list li p.money{color:#e6133c}
+.list li img{width:200px;height: 200px;}
+.list li .add{width:100px;height:30px;line-height:30px;background: #e6133c;color:#fff;
+display:block;margin:auto;cursor: pointer;}
 
 
 .footer{margin-top:50px;min-width:1190px;}

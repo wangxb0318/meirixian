@@ -34,6 +34,9 @@
             <form>
                 <input type="text" placeholder="请输入关键字" class="sea">
                 <input type="button" value="" class="icon">
+                <div class="search-res" id="list">
+                
+                </div>
             </form>
         </div>
         <div class="shop">
@@ -96,6 +99,7 @@
             </div>
         </div>
     </div>
+
     <div class="fresh">
         <h3>生鲜果蔬</h3>
         <div class="fresh-l">
@@ -355,23 +359,6 @@
         </ol>
     </div>
     
-    <!-- <div class="list">
-        <a href="##">
-            <div class="box i1">生鲜果蔬</div>
-        </a>
-        <a href="##">
-            <div class="box i2">食品饮料</div>
-        </a>
-        <a href="##">
-            <div class="box i3">精品百货</div>
-        </a>
-        <a href="##">
-            <div class="box i4">护理清洁</div>
-        </a>
-        <a href="##">
-            <div class="box i5">返回顶部</div>
-        </a>
-    </div> -->
 
     <div class="footer">
         <div class="footer-t">
@@ -432,9 +419,17 @@
         </div>
     </div>
 
+    <div class="floor">
+        <div class="a">生鲜果蔬</div>
+        <div class="a">食品饮料</div>
+        <div class="a">精品百货</div>
+        <div class="a">护理清洁</div>
+        <div class="a">返回顶部</div>
+    </div>
 
 </body>
 <script src="js/jquery.js"></script>
+<script src="js/jquery.2.2.4.js"></script>
 <script src="js/move.js"></script>
 <script src="js/nav.js"></script>
 <script src="js/jquery.banner.2.0.js"></script>
@@ -489,6 +484,33 @@
     }
 
     new Index();
+
+    $(".a")[0].onclick=function(){
+        $("html").animate({
+            scrollTop:1030
+        })
+    }
+    $(".a")[1].onclick=function(){
+        $("html").animate({
+            scrollTop:1530
+        })
+    }
+    $(".a")[2].onclick=function(){
+        $("html").animate({
+            scrollTop:2100
+        })
+    }
+    $(".a")[3].onclick=function(){
+        $("html").animate({
+            scrollTop:2630
+        })
+    }
+    $(".a")[4].onclick=function(){
+        $("html").animate({
+            scrollTop:0
+        })
+    }
+
 
 </script>
 </html>
