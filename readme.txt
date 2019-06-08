@@ -1,0 +1,22 @@
+项目讲解：
+	style文件夹：
+		details.css是详情页的css；
+		index.css是首页的css；
+		list.css是商品列表页面的css；
+		login.css是登录页面的css；
+		public.css是公共样式表；
+		register.css是注册页面的css；
+		shop.css是购物车页面的css；
+	html没有放在一个文件夹里；
+	js文件夹：
+		有引进的ajax.2.0.js；jquery.js；jquery.2.2.4.js；
+			jquery.banner.2.0.js；jquery.cookie.js；
+		轮播图的js；
+		details.js是详情页的js；
+		good.js是商品列表页面的js；
+		login.js是登录页面的js；
+		register.js是注册页面的js；
+		shop.js是购物车页面的js；
+	项目实现效果：登录，注册，购物车，详情页，轮播图，二级菜单，楼梯效果，放大镜，
+		       商品列表是渲染的数据，详情页渲染的；
+	github地址：https://github.com/wangxb0318/meirixian;

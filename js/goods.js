@@ -18,13 +18,12 @@ function Goods(){
 		var str = "";
 		for(var i=0;i<this.res.length;i++){
 			str += `<li class="li" index="${this.res[i].id}">                   
-			<a href="/meirixian/details.html##?id=${this.res[i].id}">
-						<img src="${this.res[i].src}">
+			
+						<img class="xq" src="${this.res[i].src}">
 						<p>${this.res[i].title}</p>
 						<p>${this.res[i].price}</p>
-						</a>
-						<em class="add">加入购物车</em>
-
+						
+						<span class="add">点击加入购物车</span>
 					   
 					</li>`
 		}
@@ -43,18 +42,49 @@ function Goods(){
 			var e = eve || window.event;
 			var target = e.target || e.srcElement;
 			if(target.className == "add"){
-				// that.getData();
+				
 				that.id = target.parentNode.getAttribute("index");
-				// console.log(that.id)
 				that.setCookie()
+			}
+			if(target.className == "xq"){
+				that.id = target.parentNode.getAttribute("index");
+	
+				that.setCookie2()
+				setTimeout(()=>{
+						location.href = "details.html"
+				},300)
 			}
 		})
 	}
+	Goods.prototype.setCookie2 = function(){
+		this.details = getCookie("xq");
+				console.log(this.details)
+				if(this.details == undefined){
+					this.details = [{
+						id:this.id,
+					}]
+				}else{
+					var onoff = true;
+					this.details = JSON.parse(this.details);
+					for(var i=0;i<this.details.length;i++){
+							if(this.details[i].id == this.id){
+								onoff = false
+							}
+					}
+					if(onoff){
+						this.details = [{
+							id:this.id,
+						}]
+					}
+				}
+				setCookie("xq",JSON.stringify(this.details))
+	
+	}
+
 	Goods.prototype.setCookie = function(){
 		let shu = 0;
 	
 		this.goods = getCookie("goods");
-		// console.log(this.goods)
 		if(this.goods == undefined){
 			this.goods = [{
 				id:this.id,

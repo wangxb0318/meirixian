@@ -50,13 +50,11 @@
 #right{right:0;}
 
 .list{display:flex;justify-content: space-between;flex-wrap: wrap}
-.list{width:1200px;margin-left:110px;margin-top:30px;}
-.list li{text-align:center;width:210px;height:300px; border:1px solid #000;margin-bottom:20px;}
+.list{width:1200px;margin-left:110px;padding-top:30px;background:#fff;}
+.list li{text-align:center;width:210px;height:300px; border:1px solid #ececec;margin-bottom:20px;}
 .list li p{height:30px;line-height: 30px;color:#e6133c}
 .list li img{width:200px;height: 200px;}
-.list li .add{width:100px;height:30px;line-height:30px;background: #e6133c;color:#fff;
-display:block;margin:auto;cursor: pointer;}
-
+.list li .add{width:130px;height:30px;line-height:30px;background: #e6133c;color:#fff;display:block;margin:auto;cursor: pointer;}
 
 .footer{margin-top:50px;min-width:1190px;}
 .footer .footer-t{background:#f3f3f3;padding: 20px 0;height: 150px;padding-left:150px;}
